@@ -24,7 +24,7 @@ const NavBar = () => {
       setIsLoggedIn(false);
       setUsername('');
       setMenuOpen(false);
-      navigate('/Home');
+      navigate("/");
     }
   };
 
