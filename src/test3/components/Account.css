@@ -1,0 +1,108 @@
+.account-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+}
+.account-container h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.account-container h3 {
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.stats-section {
+  background-color: #eef2f7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.stats-section p {
+  margin: 8px 0;
+  width: 45%;
+}
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.booking-card {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f3f7ff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+.booking-card:hover{
+  transform: translateY(-2px);
+}
+.booking-card p{
+  margin: 5px 0;
+  color: #333;
+  font-size: 15px;
+}
+.cancel-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+.cancel-button:hover{
+  background-color: #c0392b;
+}
+.export-buttons{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.export-buttons button{
+  padding: 10px 16px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 0.95rem;
+}
+.export-buttons button:hover{
+    background-color: #1f6391;
+}
+@media (max-width: 600px){
+    .account-container {
+      padding: 15px;
+    }
+
+    .stats-section p {
+      width: 100%;
+    }
+
+    .booking-card {
+      font-size: 0.95rem;
+    }
+
+    .export-buttons {
+      flex-direction: column;
+    }
+
+    .export-buttons button {
+      width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+.Home-container1{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Ballon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: aqua; */
+    /* background-attachment: fixed; */
+}
+.Home-container2{
+    text-align: center;
+}
+.Home-container1 h1{
+    font-size: 3rem;
+    color: white;
+}
+.Home-container1 p{
+    color: #A89DE0;
+}
+.Home-container3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.Home-container3 h1{
+    font-size: 34px;
+    margin-top: 50px;
+}
+.Home-container4{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+}

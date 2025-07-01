@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.About-contanier2{
+    height: 30vh;
+    color: white;
+    background-image: url(./sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    animation: slideDown 1s ease;
+}
+@keyframes slideDown{
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.About-contanier2 h1{
+    font-size: 36px;
+    color: black;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+.About-contanier2 p{
+    font-size: 16px;
+    margin-top: 5px;
+    color: #A89DE0;
+}
+.About-contanier2 a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+
+.flight-section{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 40px 20px;
+    animation: fadeIn 1s ease;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.flight-text{
+    flex: 1 1 400px;
+}
+.flight-text h3{
+    font-size: 20px;
+    color: #A89DE0;
+}
+.flight-text h1{
+    font-size: 28px;
+    margin: 10px 0;
+}
+.flight-text p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+.flight-video{
+    flex: 1 1 400px;
+    transition: transform 0.3s ease;
+}
+.flight-video:hover{
+    transform: scale(1.03);
+}
+.flight-video video{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+@media(max-width:768px){
+    .flight-section{
+        flex-direction: column;
+    }
+
+    .Flight-contanier h1{
+        font-size: 28px;
+    }
+
+    .Flight-contanier p{
+        font-size: 14px;
+    }
+
+    .flight-text h1{
+        font-size: 24px;
+    }
+}
