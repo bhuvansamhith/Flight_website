@@ -1,15 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Booking.css'; 
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Flight = () => {
   const [formData, setFormData] = useState({
     from: '',
     to: '',
     departureDate: '',
-    returnDate: '',
     passengers: 1,
     travelClass: 'Economy'
   });
+
+  useEffect(() => {
+    const savedData = localStorage.getItem('flightBooking');
+    if (savedData) {
+      setFormData({
+        ...savedData,
+        travelClass: savedData.travelClass || 'Economy'
+      });
+      setFormData(JSON.parse(savedData));
+    }
+  }, []);
+
+  
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,6 +36,8 @@ const Flight = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Flight Booking Details:', formData);
+    localStorage.setItem('flightBooking', JSON.stringify(formData));
+    navigate('./About');
   };
 
   return (
@@ -38,8 +54,6 @@ const Flight = () => {
           <input type="text" name="to" placeholder="To" id='input-1' value={formData.to} onChange={handleChange} required/>
 
           <input type="date" name="departureDate" id='input-1' value={formData.departureDate} onChange={handleChange} required/>
-
-          <input type="date" name="returnDate" id='input-1' value={formData.returnDate} onChange={handleChange}/>
 
           <input type="number" name="passengers" id='input-2' value={formData.passengers} onChange={handleChange} min="1" max="10"/>
 
