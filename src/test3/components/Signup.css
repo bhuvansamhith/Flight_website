@@ -34,19 +34,23 @@
     border-radius: 4px;
 }
 .signup-form button{
+    /* width: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #A89DE0;
     color: white;
     font-size: 15px;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
+    /* align-content: center; */
 }
 .signup-form button:hover{
-    background-color: #218838;
+    background-color: white;
+    color: #A89DE0;
+    border: 1px solid #A89DE0;
 }

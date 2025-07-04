@@ -11,16 +11,16 @@ const Flight = () => {
     travelClass: 'Economy'
   });
 
-  useEffect(() => {
-    const savedData = localStorage.getItem('flightBooking');
-    if (savedData) {
-      setFormData({
-        ...savedData,
-        travelClass: savedData.travelClass || 'Economy'
-      });
-      setFormData(JSON.parse(savedData));
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedData = localStorage.getItem('flightBooking');
+  //   if (savedData) {
+  //     setFormData({
+  //       ...savedData,
+  //       travelClass: savedData.travelClass || 'Economy'
+  //     });
+  //     setFormData(JSON.parse(savedData));
+  //   }
+  // }, []);
 
   
   const navigate = useNavigate(); 
@@ -37,12 +37,12 @@ const Flight = () => {
     e.preventDefault();
     console.log('Flight Booking Details:', formData);
     localStorage.setItem('flightBooking', JSON.stringify(formData));
-    navigate('./About');
+    navigate('./view');
   };
 
   return (
     <div className="flight-container">
-      {/* <h2>Welcome to the Flight Booking Home Page</h2> */}
+      
       <form onSubmit={handleSubmit} className="flight-form">
         <div className="form-title">
           <h2>Book Your Flight</h2>

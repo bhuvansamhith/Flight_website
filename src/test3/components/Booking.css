@@ -1,10 +1,11 @@
+
 .flight-container{
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #007bff; */
+  /* background-color: white; */
 }
 .flight-form{
   display: flex;
@@ -15,10 +16,10 @@
   width: 100%;
   padding: 15px;
   gap: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  /* background-color: aqua; */
+  background-color: white;
 }
 .form-title{
   text-align: center;
@@ -53,8 +54,6 @@
   border-radius: 5px;
   margin: 5px;
 }
-
-
 .form-button button{
   padding: 10px 30px;
   font-size: 16px;
@@ -72,15 +71,13 @@
   
 }
 @media (max-width: 768px) {
-  .flight-form input,
-  .flight-form select {
+  .flight-form input,.flight-form select{
     flex: 1 1 45%;
   }
 }
 
 @media (max-width: 480px) {
-  .flight-form input,
-  .flight-form select {
+  .flight-form input,.flight-form select{
     flex: 1 1 100%;
   }
 }

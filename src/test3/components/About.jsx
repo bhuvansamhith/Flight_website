@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-import Footer from './Footer';
 import video1 from './video1.mp4';
-import View from './View';
 
 const About = () => {
   return (
     <div className='About-container'>
-      {/* <div className='About-contanier2'>
+      <div className='About-contanier2'>
             <h1>About Us</h1>
             <p><Link to='./Home' >Home</Link>/<span>About</span></p>
       </div>
@@ -24,13 +22,9 @@ const About = () => {
         <div className="flight-video">
           <video src={video1} muted autoPlay loop />
         </div>
-      </div> */}
+      </div>
 
-      <View></View>
-
-
-
-
+      {/* <View></View> */}
 
     </div>
   )

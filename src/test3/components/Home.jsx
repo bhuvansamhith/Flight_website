@@ -4,6 +4,7 @@ import Carousel from './Carousel.jsx';
 import './Home.css';
 import Service from './Service.jsx';
 import Footer from './Footer.jsx';
+import { Outlet } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -21,9 +22,9 @@ const Home = () => {
           <Carousel/>
         </div>
         <div className='Home-container4'>
-          <h1>Our Service</h1>
           <Service></Service>
         </div>
+        <Outlet/>
     </div>
   );
 };

@@ -1,0 +1,139 @@
+.confirm-container{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.confirm-container::before{
+    content: "✈";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 150px;
+    color: #f0f0f0;
+    opacity: 0.15;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+
+.confirm-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+.confirm-boarding-pass {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px dashed #333;
+    border-radius: 12px;
+    background-color: #fefefe;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.confirm-pass-left {
+    flex: 1 1 350px;
+    padding: 30px 30px 40px;
+    background-color: #fafafa;
+    border-right: 1px dashed #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.confirm-pass-right {
+    flex: 1 1 350px;
+    padding: 30px;
+    color: #222;
+    font-weight: 500;
+}
+
+.confirm-airline-logo {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.confirm-airline-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.confirm-section-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.confirm-pass-left p,.confirm-pass-right p{
+    margin: 6px 0;
+    font-size: 1em;
+}
+
+.confirm-pass-left p strong,.confirm-pass-right p strong{
+    color: #222;
+}
+
+.barcode-placeholder{
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    background: repeating-linear-gradient(
+      90deg,
+      #000 0,
+      #000 3px,
+      #fff 3px,
+      #fff 7px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    user-select: none;
+}
+
+.barcode-number{
+    color: #111;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 1.1rem;
+    background: white;
+    padding: 0 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 800px) {
+    .confirm-boarding-pass {
+      flex-direction: column;
+    }
+    
+    .confirm-pass-left {
+      border-right: none;
+      border-bottom: 1px dashed #bbb;
+      padding-bottom: 40px;
+    }
+}

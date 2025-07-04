@@ -4,6 +4,7 @@
     padding: 40px 20px 20px;
     margin-top: 40px;
 }
+
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -15,11 +16,14 @@
 .footer-section{
     flex: 1 1 250px;
 }
+
 .footer-section h2{
     color: #fff;
     margin-bottom: 15px;
     font-size: 20px;
 }
+
+
 .footer-section p{
     font-size: 14px;
     line-height: 1.6;
@@ -28,6 +32,7 @@
     list-style: none;
     padding: 0;
 }
+
 .footer-section ul li{
     margin-bottom: 10px;
 }
@@ -40,6 +45,7 @@
 .footer-section ul li a:hover{
     color: #A89DE0;
 }
+
 .footer-bottom{
     text-align: center;
     padding-top: 20px;
@@ -47,6 +53,8 @@
     font-size: 14px;
     color: #aaa;
 }
+
+
 @media (max-width: 768px){
     .footer-container {
         flex-direction: column;

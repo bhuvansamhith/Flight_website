@@ -36,9 +36,9 @@ nav{
     color: #A89DE0; 
 }
 .container2 button{
+    color: #fff;
     background-color: transparent;
     border: 1px solid #fff;
-    color: #fff;
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     cursor: pointer;
@@ -57,7 +57,7 @@ nav{
     width: 24px;
     height: 24px;
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
     nav{
         flex-wrap: wrap;
     }
@@ -79,12 +79,12 @@ nav{
 nav.mobile-open .container1,nav.mobile-open .container2{
     animation: slideDown 0.3s ease forwards;
 }
-@keyframes slideDown{
-    from {
+@keyframes slideDown {
+    from{
         opacity: 0;
         transform: translateY(-10%);
     }
-    to {
+    to{
         opacity: 1;
         transform: translateY(0);
     }

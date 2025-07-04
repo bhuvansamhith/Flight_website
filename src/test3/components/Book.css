@@ -1,0 +1,126 @@
+.book-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ticket {
+  border: 2px dashed #333;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fefefe;
+  margin-bottom: 24px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ticket-logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.ticket h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.ticket-header {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.airline-logo {
+  width: 50px;
+  height: auto;
+}
+
+.airline-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.ticket-column p {
+  margin-bottom: 4px;
+}
+
+.personal-details-form {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  background: #f9f9f9;
+}
+
+.personal-details-form h3 {
+  margin-bottom: 12px;
+}
+
+/* Two-column grid */
+.personal-details-form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Make address and button span both columns */
+.personal-details-form .form-group textarea,
+.personal-details-form .form-group:nth-last-child(2),
+.personal-details-form button {
+  grid-column: span 2;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.confirm-button {
+  width: 20%;
+  background-color:#A89DE0;
+  color: white;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.confirm-button:hover {
+  background-color: white;
+  color: #A89DE0;
+  border: 1px solid #A89DE0;
+}
+
+/* Stack on small screens */
+@media (max-width: 600px) {
+  .personal-details-form form {
+    grid-template-columns: 1fr;
+  }
+  .personal-details-form .form-group textarea,
+  .personal-details-form .form-group:nth-last-child(2),
+  .personal-details-form button {
+    grid-column: span 1;
+  }
+}

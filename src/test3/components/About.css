@@ -75,26 +75,32 @@
     color: #A89DE0;
 }
 .flight-text h1{
+    /* background-color: aqua; */
     font-size: 28px;
     margin: 10px 0;
 }
 .flight-text p{
     font-size: 16px;
     line-height: 1.6;
+    /* color: #A89DE0; */
 }
 .flight-video{
     flex: 1 1 400px;
     transition: transform 0.3s ease;
 }
 .flight-video:hover{
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
+
+
 .flight-video video{
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-@media(max-width:768px){
+
+
+@media (max-width:768px) {
     .flight-section{
         flex-direction: column;
     }

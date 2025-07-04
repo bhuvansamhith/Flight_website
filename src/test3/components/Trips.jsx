@@ -11,7 +11,7 @@ import Tokyo from "./Tokyo.jpg";
 import Sydney from "./sydney.jpg";
 import airplane from "./airplane.png";
 
-import Footer from './Footer';
+// import Footer from './Footer';
 
 const Trips = () => {
   return (

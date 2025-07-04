@@ -39,6 +39,7 @@
     margin-top: 5px;
     color: #A89DE0;
 }
+
 .Flight-contanier a{
     text-decoration: none;
     color: black;
@@ -72,6 +73,7 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
+
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -87,12 +89,14 @@
     height: 180px;
     object-fit: cover;
 }
+
 .slide-content{
     padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .slide-header{
     display: flex;
     justify-content: space-between;
@@ -106,10 +110,12 @@
 .route-info p:first-child{
     font-weight: 600;
 }
+
 .route-info p:last-child{
     font-size: 14px;
     color: #666;
 }
+
 .price-info p{
     font-size: 14px;
     color: #666;
@@ -138,7 +144,10 @@
     color: #a89de0;
     border: 1px solid #a89de0;
 }
+
+
 @media(max-width: 768px){
+    
     .Flight-contanier h1{
         font-size: 28px;
     }

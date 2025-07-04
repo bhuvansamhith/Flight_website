@@ -15,30 +15,23 @@ const Carousel = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (isPaused || !carouselRef.current) return;
+  const interval = setInterval(() => {
+    if (isPaused || !carouselRef.current) return;
 
-      const slide = carouselRef.current.querySelector(".slide");
-      const slideWidth = slide ? slide.offsetWidth : 200;
+    const container = carouselRef.current;
+    const firstSlide = container.querySelector(".slide");
+    const scrollAmount = firstSlide?.offsetWidth || 300;
 
-      carouselRef.current.scrollBy({
-        left: slideWidth,
-        behavior: "smooth"
-      });
+    if (container.scrollLeft + container.offsetWidth >=
+      container.scrollWidth - 1) {
+      container.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  }, 3000);
 
-      if (
-        carouselRef.current.scrollLeft + carouselRef.current.offsetWidth >=
-        carouselRef.current.scrollWidth
-      ) {
-        carouselRef.current.scrollTo({
-          left: 0,
-          behavior: "smooth"
-        });
-      }
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [isPaused]);
+  return () => clearInterval(interval);
+}, [isPaused]);
 
   return (
     <div className="carousel-container" ref={carouselRef} onMouseEnter={() =>setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>

@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scrollbar-width: none;
 }
+body{
+    background-color: #f2f4f7;
+}
 .Home-container1{
     height: 500px;
     width: 100%;
@@ -37,11 +40,12 @@
     text-align: center;
 }
 .Home-container3 h1{
-    font-size: 34px;
+    font-size: 44px;
+    font-weight: bolder;
     margin-top: 50px;
 }
 .Home-container4{
-    font-size: 24px;
+    
     text-align: center;
     padding-top: 50px;
 }

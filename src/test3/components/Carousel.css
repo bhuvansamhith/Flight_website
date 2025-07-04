@@ -1,4 +1,4 @@
-.carousel-container{
+.carousel-container {
   width: 90%;
   display: flex;
   overflow-x: auto;
@@ -11,68 +11,81 @@
   margin-left: 10px;
   margin-top: 50px;
 }
-.slide{
+
+.slide {
   flex: 0 0 auto;
   height: 300px;
   width: 350px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   scroll-snap-align: start;
   transition: transform 0.3s;
 }
-.slide:hover{
+
+.slide:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
-.slide-image{
+
+.slide-image {
   width: 100%;
   height: 170px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.slide-content{
+
+.slide-content {
   padding: 0.5rem;
 }
-.slide-header{
+
+.slide-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.airplane-icon img{
+
+.airplane-icon img {
   width: 24px;
   height: 24px;
 }
-.route-info{
+
+.route-info {
   flex: 1;
   margin-left: 0.5rem;
 }
-.route-info p{
+
+.route-info p {
   margin: 0;
   font-size: 0.85rem;
   color: #333;
 }
-.price-info{
+
+.price-info {
   text-align: right;
 }
-.price-info p{
+
+.price-info p {
   margin: 0;
   font-size: 0.75rem;
   color: #666;
 }
-.price-info h2{
-  margin:0;
-  font-size:1.2rem;
-  color:#A89DE0;
+
+.price-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #A89DE0;
 }
-.slide-actions{
-  display:flex;
-  justify-content:space-between;
-  margin-top:0.5rem;
+
+.slide-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
 }
-.slide-actions button{
+
+.slide-actions button {
   flex: 1;
   margin: 0 0.25rem;
   padding: 0.4rem;
@@ -84,37 +97,47 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.slide-actions button:hover{
+
+.slide-actions button:hover {
   background-color: white;
   color: #A89DE0;
   border: 2px solid #A89DE0;
 }
-.slide-header1{
+
+.slide-header1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media(max-width: 768px){
-  .slide{
+
+@media(max-width: 768px) {
+  .slide {
     width: 200px;
   }
 }
-@media(max-width: 480px){
-  .carousel-container{
+
+@media(max-width: 480px) {
+  .carousel-container {
     margin-left: 50px;
   }
-  .slide{
+
+  .slide {
     width: 250px;
     height: 240px;
     /* background-color: #007BFF; */
   }
-  .slide-image{
+
+  .slide-image {
     height: 120px;
   }
-  .route-info p,.price-info p,.price-info h2{
+
+  .route-info p,
+  .price-info p,
+  .price-info h2 {
     font-size: 0.75rem;
   }
-  .slide-actions button{
+
+  .slide-actions button {
     font-size: 0.75rem;
   }
 }
